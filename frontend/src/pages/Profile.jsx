@@ -121,7 +121,7 @@ function Profile({ user, onLogout }) {
         {/* IDOR Warning */}
         <div className="bg-yellow-50 border border-yellow-200 rounded-lg p-4 mb-6">
           <p className="text-sm text-yellow-800">
-            ⚠️ <strong>IDOR Vulnerability:</strong> Try changing the user ID in the URL (e.g., /profile/1, /profile/2, /profile/3)
+             <strong>IDOR Vulnerability:</strong> Try changing the user ID in the URL (e.g., /profile/1, /profile/2, /profile/3)
             to access other users' profiles!
           </p>
         </div>
@@ -221,13 +221,11 @@ function Profile({ user, onLogout }) {
 
         {/* Testing Tips */}
         <div className="mt-6 bg-blue-50 border border-blue-200 rounded-lg p-6">
-          <h3 className="font-bold text-blue-900 mb-3">💡 IDOR Testing Tips:</h3>
+          <h3 className="font-bold text-blue-900 mb-3"> IDOR Testing:</h3>
           <ul className="text-sm text-blue-800 space-y-2">
-            <li>• Current URL: <code className="bg-white px-2 py-1 rounded">/profile/{id}</code></li>
-            <li>• Try accessing: <code className="bg-white px-2 py-1 rounded">/profile/1</code> (admin profile)</li>
-            <li>• Try accessing: <code className="bg-white px-2 py-1 rounded">/profile/2</code>, <code className="bg-white px-2 py-1 rounded">/profile/3</code>, etc.</li>
-            <li>• Notice: You can view AND edit ANY user's profile!</li>
-            <li>• In a secure app, you should only access your own profile</li>
+            <li> Current URL: <code className="bg-white px-2 py-1 rounded">/profile/{id}</code></li>
+            <li> Try accessing: <code className="bg-white px-2 py-1 rounded">/profile/1</code> (admin profile)</li>
+            <li> Try accessing: <code className="bg-white px-2 py-1 rounded">/profile/2</code>, <code className="bg-white px-2 py-1 rounded">/profile/3</code>, etc.</li>
           </ul>
         </div>
       </main>

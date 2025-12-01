@@ -63,7 +63,7 @@ function Forum({ user, onLogout }) {
         <div className="max-w-6xl mx-auto px-4 py-4">
           <div className="flex justify-between items-center">
             <div>
-              <h1 className="text-2xl font-bold text-gray-800">Vulnerable Forum</h1>
+              <h1 className="text-2xl font-bold text-gray-800">Forum</h1>
               <p className="text-sm text-gray-600">Welcome, {user.username}!</p>
             </div>
             <div className="flex gap-3">
@@ -154,12 +154,9 @@ function Forum({ user, onLogout }) {
                 <p className="text-gray-700 mb-4">{post.content}</p>
                 <div className="flex justify-between items-center text-sm text-gray-500">
                   <div className="flex items-center gap-2">
-                    <button
-                      onClick={() => navigate(`/profile/${post.author_id}`)}
-                      className="text-indigo-600 hover:text-indigo-800 font-medium"
-                    >
+                    <span className="text-indigo-600 font-medium">
                       @{post.author_name}
-                    </button>
+                    </span>
                   </div>
                   <span>{formatDate(post.created_at)}</span>
                 </div>

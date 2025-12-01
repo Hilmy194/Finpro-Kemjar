@@ -94,7 +94,7 @@ function Login({ onLogin }) {
         <div className="mt-4 text-center">
           <div className="text-xs text-gray-500 bg-blue-50 rounded p-3">
             <p className="font-semibold mb-1">SQL Injection Hint:</p>
-            <p>Try: <code className="bg-white px-1 rounded">hilmy' OR '1'='1' --</code></p>
+            <p>Try: <code className="bg-white px-1 rounded">' OR '1'='1' --</code></p>
           </div>
         </div>
       </div>

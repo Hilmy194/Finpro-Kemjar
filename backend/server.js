@@ -27,6 +27,4 @@ app.get('/api/health', (req, res) => {
 // Start server
 app.listen(PORT, () => {
   console.log('Server running on http://localhost:' + PORT);
-  console.log('WARNING: This server has intentional security vulnerabilities');
-  console.log('For educational purposes only - DO NOT deploy to production');
 });
